@@ -19,7 +19,13 @@ selecionaCor();
 function pintarQuadro() {
   painel.addEventListener('click', function (event) {
     if (event.target.classList[0] == 'pixel') {
-      event.target.classList.add(divSelecionada.classList[1]);
+      if (event.target.classList.length == 3) {
+        event.target.classList.remove(event.target.classList[2]);
+        event.target.classList.add(divSelecionada.classList[1]);
+      } else {
+        event.target.classList.add(divSelecionada.classList[1]);
+      }
+      
     }
   });
 }
@@ -28,7 +34,7 @@ pintarQuadro();
 function clear() {
   button.addEventListener('click', function () {
     for (let i = 0; i < pixel.length; i += 1) {
-      pixel[i].classList = 'pixel white';
+      pixel[i].className = 'pixel white';
     }
   });
 }
