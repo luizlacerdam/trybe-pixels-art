@@ -12,6 +12,10 @@ body {
   display: inline-block;
 }
 
+.white {
+  background-color: white;
+}
+
 .black {
   background-color: black;
 }
@@ -27,11 +31,12 @@ body {
 .blue {
   background-color: blue;
 }
-.pixel-board {
+#pixel-board {
   border: 1px solid black;
+  width: fit-content;
+  margin: auto;
 }
 .pixel {
-  background-color: white;
   width: 40px;
   height: 40px;
   border: 1px solid black;
