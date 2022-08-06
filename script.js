@@ -4,6 +4,7 @@ const buttonClear = document.getElementById('clear-board');
 const pixel = document.getElementsByClassName('pixel');
 const inputNumber = document.getElementById('board-size');
 const buttonGenerate = document.getElementById('generate-board');
+const sectionPainel = document.getElementsByClassName('painel')[0];
 let divSelecionada = document.getElementsByClassName('selected')[0];
 
 function colorRandom() {
@@ -103,5 +104,3 @@ function removeBoard() {
     painel.removeChild(painel.firstChild);
   }
 }
-
-

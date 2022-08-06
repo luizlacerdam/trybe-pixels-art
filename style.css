@@ -18,18 +18,6 @@ body {
   background-color: black;
 }
 
-.red {
-  background-color: red;
-}
-
-.green {
-  background-color: green;
-}
-
-.blue {
-  background-color: blue;
-}
-
 #pixel-board {
   width: fit-content;
   margin: auto;
@@ -63,4 +51,19 @@ li {
 
 #input-pixels {
   margin: 10px;
+}
+
+header {
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: rgb(104, 169, 126);
+}
+.painel {
+  border: 1px solid black;
+  padding: 10%;
+  margin: auto;
+  background-color: rgb(42, 91, 70);
+}
+main {
+  padding: 10%;
 }
