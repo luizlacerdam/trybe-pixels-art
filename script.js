@@ -20,7 +20,7 @@ function newClass() {
   let style = document.createElement('style');
   for (let i = 0; i < 3; i += 1) {
     style.innerHTML += '.cor-' + [i] + '{background-color: ' + colorRandom() + ';}';
-    
+
   }
   document.getElementsByTagName('head')[0].appendChild(style);
 }
@@ -39,11 +39,19 @@ selecionaCor();
 
 function pintarQuadro() {
   painel.addEventListener('click', function (event) {
-    console.log(event.target);
+
+    console.log('divSelecionada:', divSelecionada.classList[1]);
+    console.log('pixel:', event.target.classList);
+
     if (event.target.classList[0] == 'pixel') {
       if (event.target.classList.length == 3) {
-        event.target.classList.remove(event.target.classList[2]);
-        event.target.classList.add(divSelecionada.classList[1]);
+        if (event.target.classList[2] === divSelecionada.classList[1]) {
+          event.target.classList.toggle(event.target.classList[2]);
+        }
+        else {
+          event.target.classList.remove(event.target.classList[2]);
+          event.target.classList.add(divSelecionada.classList[1]);
+        }
       } else {
         event.target.classList.add(divSelecionada.classList[1]);
       }
