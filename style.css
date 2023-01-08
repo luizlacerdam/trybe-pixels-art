@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  background-color: rgb(42, 91, 70);
 }
 
 .color {
@@ -54,15 +55,13 @@ li {
 }
 
 header {
-  border: 1px solid black;
-  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: rgb(104, 169, 126);
-}
-.painel {
-  border: 1px solid black;
-  padding: 10%;
-  margin: auto;
-  background-color: rgb(42, 91, 70);
+  width: 100%;
+  height: 50px;
+  padding: 15px;
 }
 main {
   padding: 10%;

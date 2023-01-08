@@ -39,10 +39,6 @@ selecionaCor();
 
 function pintarQuadro() {
   painel.addEventListener('click', function (event) {
-
-    console.log('divSelecionada:', divSelecionada.classList[1]);
-    console.log('pixel:', event.target.classList);
-
     if (event.target.classList[0] == 'pixel') {
       if (event.target.classList.length == 3) {
         if (event.target.classList[2] === divSelecionada.classList[1]) {
